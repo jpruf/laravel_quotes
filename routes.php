@@ -11,9 +11,14 @@
 |
 */
 
-Route::get('/', [
+Route::get('/{author?}', [
     'uses'=>'QuoteController@getIndex',
     'as'=>'index'
+]);
+
+Route::get('/delete/{quote_id}', [
+    'uses'=>'QuoteController@getDeleteQuote',
+    'as'=>'delete'
 ]);
 
 Route::post('/new', [
