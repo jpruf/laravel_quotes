@@ -25,3 +25,8 @@ Route::post('/new', [
     'uses'=>'QuoteController@postQuote',
     'as'=>'create'
 ]);
+
+Route::get('/gotemail/{author_name}', [
+    'uses'=>'QuoteController@getMailCallback',
+    'as'=>'mail_callback'
+]);

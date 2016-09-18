@@ -52,6 +52,8 @@
             <div class="input-group">
                 <label for="author">Name</label>
                 <input type="text" name="author" id="author">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email">
                 <label for="quote">Quote</label>
                 <input type="textarea" name="quote" id="quote" rows="5"></textarea>
             </div>
